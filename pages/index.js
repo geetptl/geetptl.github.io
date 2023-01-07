@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Geet Patel's Portfolio</title>
+        <title>Geet Patel&apos;s Portfolio</title>
       </Head>
 
       <main className='bg-slate-600 px-10'>
