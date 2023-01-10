@@ -40,6 +40,18 @@ export default function Home() {
               <h2 className='text-xl text-slate-400 py-5'>a &#40;self-recognised&#41; mathematician, a home cook, an amatuer tennis player, and a lot more...</h2>
             </div>
           </BrowserView>
+
+          <footer className='text-center text-xl py-20'>
+            <p>The page is still under construction!</p>
+            <p className='text-slate-400'>But that doesn&#39;t mean you can&#39;t visit my&nbsp;
+              <a href='https://github.com/geetptl' title='Github' target="_blank" rel="noopener noreferrer">Github</a>
+              ,&nbsp;
+              <a href='https://www.linkedin.com/in/geet-p/' title='LinkedIn' target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              &nbsp;or&nbsp;
+              <a href='./resume.pdf' title='Single-page Resume PDF' target='_blank' rel="noopener noreferrer">Resume</a>
+              !
+            </p>
+          </footer>
         </section>
       </main>
     </div>
