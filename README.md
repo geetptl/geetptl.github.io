@@ -25,4 +25,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Netlify
 
-Please leave me alone.
+Please leave me alone. Or don't, actually. I have attachment issues 👉👈.

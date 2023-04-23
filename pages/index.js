@@ -1,9 +1,21 @@
 import Head from 'next/head'
-import { FiGithub } from 'react-icons/fi'
+import { FiCopy, FiGithub } from 'react-icons/fi'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { BrowserView, MobileView } from 'react-device-detect';
+import React, { useState } from 'react'
+
+const email = 'geetpofficial@gmail.com'
 
 export default function Home() {
+  const [showAlert, setShowAlert] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowAlert(true);
+    setTimeout(() => {
+      setShowAlert(false);
+    }, 2000);
+  };
+
   return (
     <div>
       <Head>
@@ -24,30 +36,34 @@ export default function Home() {
 
           <BrowserView>
             <nav className='p-10 flex justify-between'>
-              <h1 className='text-4xl'>Geet Patel</h1>
+              <h1 className='text-4xl'></h1>
 
               <ul className='flex items-center text-slate-200'>
-                <li className='px-3'><a href='https://github.com/geetptl' title='Github' target="_blank" rel="noopener noreferrer"><FiGithub size={30} /></a></li>
-                <li className='px-3'><a href='https://www.linkedin.com/in/geet-p/' title='LinkedIn' target="_blank" rel="noopener noreferrer"><FaLinkedinIn size={35} /></a></li>
-                <li><a className='bg-gradient-to-br text-l from-slate-500 to-slate-700 px-6 py-2 rounded-md ml-2' href='./resume.pdf' title='Single-page Resume PDF' target='_blank' rel="noopener noreferrer">Resume</a></li>
+                <li className='px-3 transition ease-in-out hover:scale-110'><a href='https://github.com/geetptl' title='Github' target="_blank" rel="noopener noreferrer"><FiGithub size={30} /></a></li>
+                <li className='px-3 transition ease-in-out hover:scale-110'><a href='https://www.linkedin.com/in/geet-p/' title='LinkedIn' target="_blank" rel="noopener noreferrer"><FaLinkedinIn size={35} /></a></li>
+                <li className='transition ease-in-out hover:scale-110'><a className='bg-gradient-to-br text-l from-slate-500 to-slate-700 px-6 py-2 rounded-md ml-2' href='./resume.pdf' title='Single-page Resume PDF' target='_blank' rel="noopener noreferrer">Resume</a></li>
               </ul>
             </nav>
 
-            <div className='text-center px-20 py-10'>
-              <h2 className='text-3xl text-slate-200'>A developer, a student,</h2>
-              <h2 className='text-xl text-slate-400 py-5'>a &#40;self-recognised&#41; mathematician, a home cook, an amatuer tennis player, and a lot more...</h2>
+            <div className='text-left px-40 py-10'>
+              <text className='text-4xl text-slate-200'>Hello there!</text>
+              <div className='text-2xl text-slate-300 py-10'>
+                <h2>I am <text className=''>Geet Patel</text>. I am a grad student in Computer Science at Rutgers.</h2>
+                <h2 className='py-10'>I am passionate about developing scalable backend solutions and cloud infrastucture.</h2>
+                <h2>But that's barely scratching the surface.</h2>
+                <h2 className='py-5'>I have made some vital oral contribuitions in UX design and data visualisation products as well.</h2>
+              </div>
+              <div className='text-slate-200 py-10'>
+                <h2><text className='text-lg'>Get in touch</text>
+                  <button className='text-sm align-top px-2 py-1 rounded-md ml-2 transition ease-in-out delay-150 bg-gradient-to-br text-l from-white to-gray-200 text-blue-700 hover:scale-110 hover:translate-x-3 duration-300' onClick={handleButtonClick}>geetpofficial@gmail.com</button></h2>{
+                  showAlert && (
+                    <div className='fixed bottom-10 right-20 bg-green-500 text-white px-3 py-2 rounded animate-fade-in-out'>
+                      Email copied!
+                    </div>
+                  )
+                }
+              </div>
             </div>
-            <footer className='text-center text-xl py-20'>
-              <p>The page is still under construction!</p>
-              <p className='text-slate-400'>But that doesn&#39;t mean you can&#39;t visit my&nbsp;
-                <a className='hover:text-slate-300' href='https://github.com/geetptl' title='Github' target="_blank" rel="noopener noreferrer">Github</a>
-                &nbsp;or&nbsp;
-                <a className='hover:text-slate-300' href='https://www.linkedin.com/in/geet-p/' title='LinkedIn' target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                ,&nbsp;or&nbsp;
-                <a className='hover:text-slate-300' href='./resume.pdf' title='Single-page Resume PDF' target='_blank' rel="noopener noreferrer">check out my resume</a>
-                !
-              </p>
-            </footer>
           </BrowserView>
         </section>
       </main>
