@@ -50,7 +50,7 @@ export default function Home() {
               <div className='text-2xl text-slate-300 py-10'>
                 <h2>I am <text className=''>Geet Patel</text>. I am a grad student in Computer Science at Rutgers.</h2>
                 <h2 className='py-10'>I am passionate about developing scalable backend solutions and cloud infrastucture.</h2>
-                <h2>But that's barely scratching the surface.</h2>
+                <h2>But that&apos;s barely scratching the surface.</h2>
                 <h2 className='py-5'>I have made some vital oral contribuitions in UX design and data visualisation products as well.</h2>
               </div>
               <div className='text-slate-200 py-10'>
