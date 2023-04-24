@@ -4,8 +4,6 @@ import { FaLinkedinIn } from 'react-icons/fa'
 import { BrowserView, MobileView } from 'react-device-detect';
 import React, { useState } from 'react'
 
-const email = 'geetpofficial@gmail.com'
-
 export default function Home() {
   const [showAlert, setShowAlert] = useState(false);
 
@@ -49,15 +47,15 @@ export default function Home() {
               <text className='text-4xl text-slate-200'>Hello there!</text>
               <div className='text-3xl text-slate-300 py-10'>
                 <h2>I am <text className=''>Geet Patel</text>. I am a grad student in Computer Science at Rutgers.</h2>
-                <h2 className='py-10'>I am passionate about developing scalable backend solutions and cloud infrastucture.</h2>
+                <h2 className='py-5'>I am passionate about developing scalable backend solutions and robust cloud infrastructure.</h2>
                 <h2>But that&apos;s barely scratching the surface.</h2>
-                <h2 className='py-5'>I have made some vital oral contribuitions in UX design and data visualisation products as well.</h2>
+                <h2 className='py-5'>I have also provided vital oral contributions in UX design and<br/> data visualization products.</h2>
               </div>
               <div className='text-slate-200 py-10'>
                 <h2><text className='text-lg'>Get in touch</text>
-                  <button className='text-sm align-top px-2 py-1 rounded-md ml-2 transition ease-in-out delay-150 bg-gradient-to-br text-l from-white to-gray-200 text-blue-700 hover:scale-110 hover:translate-x-3 duration-300' onClick={handleButtonClick}>geetpofficial@gmail.com</button></h2>{
+                  <button className='text-sm align-top px-2 py-1 rounded-md ml-2 transition ease-in-out delay-100 bg-gradient-to-br text-l from-white to-gray-200 text-blue-700 hover:scale-125 hover:translate-x-5 duration-300' onClick={handleButtonClick}>geetpofficial@gmail.com</button></h2>{
                   showAlert && (
-                    <div className='fixed bottom-10 right-20 bg-green-500 text-white px-3 py-2 rounded animate-fade-in-out'>
+                    <div className='fixed bottom-10 right-20 bg-teal-800 text-teal-200 px-3 py-2 rounded animate-fade-in-out'>
                       Email copied!
                     </div>
                   )
