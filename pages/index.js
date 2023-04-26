@@ -81,7 +81,7 @@ export default function Home() {
               {
                 showKnowMoreAlert && (
                   <div className='fixed bottom-10 right-20 bg-red-500 text-red-200 px-3 py-2 rounded animate-fade-in-out'>
-                    That's under construction!
+                    That&apos;s under construction!
                   </div>
                 )
               }
