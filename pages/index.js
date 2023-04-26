@@ -47,9 +47,9 @@ export default function Home() {
               <h1 className='text-4xl'></h1>
 
               <ul className='flex items-center text-slate-200'>
-                <li className='px-3 transition ease-in-out hover:scale-110'><a href='https://github.com/geetptl' title='Github' target="_blank" rel="noopener noreferrer"><FiGithub size={30} /></a></li>
-                <li className='px-3 transition ease-in-out hover:scale-110'><a href='https://www.linkedin.com/in/geet-p/' title='LinkedIn' target="_blank" rel="noopener noreferrer"><FaLinkedinIn size={35} /></a></li>
-                <li className='transition ease-in-out hover:scale-110'><a className='bg-gradient-to-br text-l from-slate-500 to-slate-700 px-6 py-2 rounded-md ml-2' href='./resume.pdf' title='Single-page Resume PDF' target='_blank' rel="noopener noreferrer">Resume</a></li>
+                <li className='px-3 transition ease-in-out hover:scale-[1.2]'><a href='https://github.com/geetptl' title='Github' target="_blank" rel="noopener noreferrer"><FiGithub size={30} /></a></li>
+                <li className='px-3 transition ease-in-out hover:scale-[1.2]'><a href='https://www.linkedin.com/in/geet-p/' title='LinkedIn' target="_blank" rel="noopener noreferrer"><FaLinkedinIn size={35} /></a></li>
+                <li className='transition ease-in-out hover:scale-[1.2]'><a className='bg-gradient-to-br text-l from-slate-500 to-slate-700 px-6 py-2 rounded-md ml-2' href='./resume.pdf' title='Single-page Resume PDF' target='_blank' rel="noopener noreferrer">Resume</a></li>
               </ul>
             </nav>
 
@@ -65,8 +65,8 @@ export default function Home() {
 
             <div className='text-left px-40 fixed bottom-20 text-slate-200 space-y-10'>
               <p>
-                <text className='text-lg'>Get in touch</text>
-                <button className='text-sm align-top px-2 py-1 rounded-md ml-2 transition ease-in-out delay-100 bg-gradient-to-br text-l from-white to-gray-200 text-blue-700 hover:scale-110 hover:translate-x-2 duration-300' onClick={handleEmailClick}>geetpofficial@gmail.com</button>
+                <text className='align-bottom text-lg'>Get in touch</text>
+                <button className='text-sm px-2 py-1 rounded-md ml-2 border-2 border-current transition ease-in-out delay-100 text-slate-200 hover:scale-110 hover:translate-x-2 hover:bg-slate-200 hover:text-blue-700 duration-300' onClick={handleEmailClick}>geetpofficial@gmail.com</button>
               </p>
               {
                 showEmailAlert && (
@@ -75,20 +75,21 @@ export default function Home() {
                   </div>
                 )
               }
-              <button className='text-slate-200 text-xl' onClick={handleKnowMoreClick}>
-                Or know me better<AiOutlineDown size={30} />
+              <button className='text-slate-200 text-xl space-y-1 hover:animate-bounce' onClick={handleKnowMoreClick}>
+                <p>Or know me better</p>
+                <p><AiOutlineDown size={30} /></p>
               </button>
               {
                 showKnowMoreAlert && (
-                  <div className='fixed bottom-10 right-20 bg-red-500 text-red-200 px-3 py-2 rounded animate-fade-in-out'>
+                  <div className='fixed bottom-10 right-20 bg-rose-800 text-rose-200 px-3 py-2 rounded animate-fade-in-out'>
                     That&apos;s under construction!
                   </div>
                 )
               }
             </div>
-        </BrowserView>
-      </section>
-    </main>
-    </div >
+          </BrowserView>
+        </section>
+      </main>
+    </div>
   )
 }
