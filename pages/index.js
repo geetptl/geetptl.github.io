@@ -49,7 +49,7 @@ export default function Home() {
               <ul className='flex items-center text-slate-200'>
                 <li className='px-3 transition ease-in-out hover:scale-[1.2]'><a href='https://github.com/geetptl' title='Github' target="_blank" rel="noopener noreferrer"><FiGithub size={30} /></a></li>
                 <li className='px-3 transition ease-in-out hover:scale-[1.2]'><a href='https://www.linkedin.com/in/geet-p/' title='LinkedIn' target="_blank" rel="noopener noreferrer"><FaLinkedinIn size={35} /></a></li>
-                <li className='transition ease-in-out hover:scale-[1.2]'><a className='bg-gradient-to-br text-l from-slate-500 to-slate-700 px-6 py-2 rounded-md ml-2' href='./resume.pdf' title='Single-page Resume PDF' target='_blank' rel="noopener noreferrer">Resume</a></li>
+                <li className='transition ease-in-out hover:scale-[1.2]'><a className='bg-gradient-to-br text-l from-slate-500 to-slate-700 px-6 py-2 rounded-md ml-2' href='./Geet_Patel_resume.pdf' title='Single-page Resume PDF' target='_blank' rel="noopener noreferrer">Resume</a></li>
               </ul>
             </nav>
 
