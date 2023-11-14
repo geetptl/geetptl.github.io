@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FDCCCC;
+}
+
+.header {
+    background-color: #CD5C5C;
+    color: #fff;
+    text-align: center;
+    padding: 2em;
+}
+
+.header .title {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.header .contact ul {
+    list-style: none;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+    margin: 2px;
+    padding: 0;
+}
+
+.header .contact ul li {
+    display: block;
+    flex: 0 1 auto;
+    list-style-type: none;
+    margin-left: 6px;
+    margin-right: 6px;
+    position: relative;
+}
+
+.header .contact ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.section {
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section .title {
+    display: block;
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.experience .job {
+    display: block;
+    font-size: 1.1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.experience .company {
+    display: block;
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+.experience .worked {
+    margin-top: 0.5em;
+}
+
+.experience .worked li {
+    margin-top: 0.5em;
+    max-width: 90%;
+    color: #2F2F2F;
+}
+
+.education .university {
+    display: block;
+    font-size: 1.1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.education .degree {
+    display: block;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.education .courses {
+    display: block;
+    margin-top: 0.5em;
+    font-size: 0.75em;
+}
+
+.experience .meta, .education .meta {
+    color: #4F4F4F;
+    font-size: 0.9em;
+    float: right;
+    text-align: right;
+    font-style: italic;
+}
+
+.skills ul li {
+    margin-top: 0.25em;
+}
+
+.skills .skilltype {
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .header .contact ul {
+        display: none;
+    }
+
+    .section {
+        max-width: 90%;
+        margin: 1em auto;
+        padding: 0.5em;
+    }
+}
