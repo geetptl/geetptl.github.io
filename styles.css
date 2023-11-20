@@ -113,7 +113,8 @@ body {
     font-size: 0.75em;
 }
 
-.experience .meta, .education .meta {
+.experience .meta,
+.education .meta {
     color: #4F4F4F;
     font-size: 0.9em;
     float: right;
@@ -121,11 +122,15 @@ body {
     font-style: italic;
 }
 
-.skills ul li {
-    margin-top: 0.25em;
+.skills .skilltable {
+    margin-top: 0.5em;
 }
 
 .skills .skilltype {
+    font-weight: bold;
+}
+
+.boldtext {
     font-weight: bold;
 }
 
