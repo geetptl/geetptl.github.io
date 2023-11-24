@@ -41,6 +41,7 @@ body {
     margin-left: 6px;
     margin-right: 6px;
     position: relative;
+    opacity: 0.9;
 }
 
 .header .contact ul li a {
@@ -132,6 +133,26 @@ body {
 
 .boldtext {
     font-weight: bold;
+}
+
+.topnav {
+    text-align: center;
+    overflow: hidden;
+    padding: 10px;
+    background-color: #DD6C6C;
+}
+
+.topnav a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    opacity: 0.6;
+}
+
+.topnav a.active {
+    opacity: 1;
 }
 
 @media (max-width: 900px) {
