@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css');
 
 body {
-    font-family: 'Carlito', sans-serif;
+    font-family: 'Hack Mono', monospace;
     margin: 0;
     padding: 0;
-    background-color: #FDCCCC;
+    background-color: #000000;
 }
 
 .header {
-    background-color: #CD5C5C;
+    background-color: #000000;
     color: #fff;
     text-align: center;
     padding: 2em;
@@ -141,7 +141,7 @@ body {
     text-align: center;
     overflow: hidden;
     padding: 10px;
-    background-color: #DD6C6C;
+    background-color: #0F0F0F;
 }
 
 .topnav a {
