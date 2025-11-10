@@ -4,198 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" />
     <title>Geet Patel</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        mono: ['"Cascadia Code"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer base {
+		    body {
+		        @apply font-mono;
+		    }
+		}
+    </style>
 </head>
 
-<body>
-    <div class="header">
-        <div class="title">Geet Rajendra Patel</div>
-        <div class="contact">
-            <ul>
-                <li><a href="mailto:geet.patel@rutgers.edu">geet.patel@rutgers.edu</a>
-                    <span style="font-style: italic; opacity: 0.5;">or</span>
-                    <a href="mailto:geetpofficial@gmail.com">geetpofficial@gmail.com</a>
-                </li>
-                <li>+1 (732) 522-6060</li>
-                <li><a href="https://www.linkedin.com/in/geet-p/" target="_blank">linkedin.com/in/geet-p</a></li>
-                <li><a href="https://github.com/geetptl/" target="_blank">github.com/geetptl</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="topnav">
-        <a class="active" href="index.html">Home</a>
-        <a href="blog.html">Blog</a>
-    </div>
-
-    <div class="section">
-        <div class="experience">
-            <div class="title">Experience</div>
-            <ul>
-                <li>
-                    <div class="meta">May 2023 - Aug 2022</div>
-                    <div class="job">Software Developer Intern</div>
-                    <div class="meta">New York City, NY</div>
-                    <div class="company">Findcommerce</div>
-                    <div class="worked">
-                        <ul>
-                            <li>Inspected the existing product design ideas with business team for a backend solution
-                                with common e-commerce features, leading to <i>better organization and prioritization of
-                                    tasks</i>.</li>
-                            <li>Developed user login, carts, orders and payments management backend using <span
-                                    class="boldtext">Java, Spring and MySQL</span>,
-                                with <span class="boldtext">AWS SNS</span> and <span class="boldtext">SES</span> for
-                                user notification and <span class="boldtext">Stripe</span> for order payments.</li>
-                            <li>Built production infrastructure of the Java artifact using <span class="boldtext">AWS
-                                    Elastic Beanstalk</span> and <span class="boldtext">AWS
-                                    RDS</span>.</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div class="meta">Jan 2020 - July 2022</div>
-                    <div class="job">Software Engineer</div>
-                    <div class="meta">Bangalore, India</div>
-                    <div class="company">Rapidbox</div>
-                    <div class="worked">
-                        <ul>
-                            <li>Analyzed payment API structure to investigate <span class="boldtext">payment
-                                    frauds</span>, integrated <span class="boldtext">webhooks</span>
-                                processing system along with revamped APIs to bring the fraud rate from monthly <span
-                                    class="boldtext">~50</span>
-                                cases to a complete <span class="boldtext">0</span>.</li>
-                            <li>Developed middleware <span class="boldtext">microservices</span>, allowing effortless
-                                integration of marketplace
-                                platforms with the in-house inventory and order management system to <span
-                                    class="boldtext">2x</span> the daily order
-                                volume.</li>
-                            <li>Implemented an event-driven asynchronous data transfer pipeline using <span
-                                    class="boldtext">Kafka</span> and <span class="boldtext">Logback</span>
-                                feeding into a <span class="boldtext">PostgreSQL</span> database to deliver marketing
-                                analytics, scaling to <span class="boldtext">daily 1M+</span>
-                                user actions.</li>
-                            <li>Set up views, indexes and cronjobs in the <span class="boldtext">PostgreSQL</span>
-                                database to simplify complex query
-                                scripts, reduced repetitive labor work performed by developers from weekly <span
-                                    class="boldtext">~3 hours</span> to
-                                <span class="boldtext">~30 minutes</span>.
-                            </li>
-                            <li>Collaborated to develop an end-to-end order and inventory management system using <span
-                                    class="boldtext">Java,
-                                    Spring and MySQL</span> to track items from stock purchase to order delivery,
-                                returns and
-                                exchanges.</li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-
-    <div class="section">
-        <div class="skills">
-            <div class="title">Skills</div>
-            <table class="skilltable">
-                <tr>
-                    <td><span class="skilltype">Programming Languages</span></td>
-                    <td><span class="skillvalue">Java, Python, Golang, C++, SQL, JavaScript, Shell Scripting, HTML,
-                            CSS</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td><span class="skilltype">Frameworks/Libraries/Misc</span></td>
-                    <td><span class="skillvalue">Spring, Hibernate, JUnit, Node.JS, Express, Jasmine, Flask, PyTorch,
-                            Flask, FastAPI, PyTest, Flink</span></td>
-                </tr>
-                <tr>
-                    <td><span class="skilltype">Databases</span></td>
-                    <td><span class="skillvalue">MySQL, MariaDB, PostgreSQL, SQLite, Apache Kafka, Redis,
-                            Elasticsearch</span></td>
-                </tr>
-                <tr>
-                    <td><span class="skilltype">Tools</span></td>
-                    <td><span class="skillvalue">Docker, Unix/Linux, AWS (S3, EC2, Lambda, RDS), Git/Github</span></td>
-                </tr>
-                <tr>
-                    <td><span class="skilltype">Miscellaneous</span></td>
-                    <td><span class="skillvalue">REST APIs, Object Oriented Design, Query planning & execution, Agile,
-                            Stream processing</span></td>
-                </tr>
-            </table>
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="project">
-            <div class="title">Projects</div>
-            <ul>
-                <li>
-                    <div class="stack">Go, Linux Filesystem, Cobra</div>
-                    <div class="name">Goque: A filesystem-backed messaging queue [<a
-                            href="https://github.com/geetptl/goque" target="_blank">github</a>]</div>
-                    Implemented a message queue application that borrows the concept of topic from Kafka. Used cobra to
-                    manage the cli, and core os interfacing library to interact with the filesystem to manage the index
-                    and log-appended queue.
-                </li>
-                <li>
-                    <div class="stack">Linux, Bash, Scripting</div>
-                    <div class="name">Process Containers</div>
-                    Developed a set of scripts that when run into its order, will fetch Alpine Linux distro, and utilize
-                    that to run contained processes. Set includes filesystem, network and memory allocation
-                    configuration scripts.
-                </li>
-                <li>
-                    <div class="stack">Node.JS, PostgreSQL, Docker, SQLite</div>
-                    <div class="name">BookBarter: A book lending platform for readers and owners [<a
-                            href="https://github.com/geetptl/BookBarter" target="_blank">github</a>]</div>
-                    Collaborated on a software engineering process-focused project, serving as the main maintainer and
-                    reviewer of the backend code. Implemented JWT, carried out database migration, among other personal
-                    contributions.
-                </li>
-                <li>
-                    <div class="stack">Java, Kafka, Flink, Docker</div>
-                    <div class="name">Network Usage Alerts: A stream processing orchestration [<a
-                            href="https://github.com/geetptl/flink-demo" target="_blank">github</a>]</div>
-                    Used Docker to orchestrate a de-coupled data pipeline using Apache Kafka as a datastream source, and
-                    Apache Flink as a stream processor, to generate real-time network usage limit alerts for users.
-                </li>
-                <!-- <li>
-                    <div class="stack">Python, Numpy, OpenCV</div>
-                    <div class="name">Inverse Kinematics and Machine Learning for Humanoid Robotics</div>
-                    Developed a cost-effective and computationally efficient motion tracking using classical image
-                    processing methods, which can be utilized for inverse kinematics models and LSTM training.
-                </li> -->
-            </ul>
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="education">
-            <div class="title">Education</div>
-            <ul>
-                <li>
-                    <div class="meta">New Brunswick, NJ</div>
-                    <div class="university">Rutgers University</div>
-                    <div class="meta">Sept 2022 - May 2024</div>
-                    <div class="degree">Master of Science in Computer Science</div>
-                    <div class="courses">Introduction to Artificial Intelligence, Mathematical Foundations of Data
-                        Science, Machine Learning, Natural Language Processing, Design of Internet Services, Software
-                        Engineering, Quantum Computing</div>
-                </li>
-                <li>
-                    <div class="meta">Gandhinagar, India</div>
-                    <div class="university">Dhirubhai Ambani Institute of Information and Communication Technology</div>
-                    <div class="meta">Aug 2016 - May 2020</div>
-                    <div class="degree">Bachelor of Technology in Information and Communication Technology</div>
-                    <div class="courses">Data Structures, Design and Analysis of Algorithms, Database Management
-                        Systems, Probability Statistics and Information Theory, GPU Programming, Operating Systems</div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
+<body class="bg-black text-white">
+    <h1 class="mx-auto text-center">
+        Geet Rajendra Patel
+    </h1>
 </body>
 
 </html>
